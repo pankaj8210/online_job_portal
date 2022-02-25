@@ -1,0 +1,84 @@
+{% load static %}
+
+{% block body %}
+
+{% include 'navigation.html'  %}
+
+<style>
+    .container{
+        max-width: 95%;
+    }
+
+    .content{
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        background: rgba(0,0,0,0.5);
+        color: #ffffff;
+        height: 30px;
+        width:91%;
+    }
+</style>
+<div class="container-fliud" style="margin-top:1%">
+     <img src="{% static 'images/12.png' %}" style="height: 450px;width:100%">
+</div>
+
+<div class="container" style="background-color:black; height:520px; margin-top:2%">
+    <h1 class="text-center text-white">----------| OUR PLACED STUDENTS|----------</h1>
+
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <img src="{% static 'images/placed.jpg'%}" style="width:100%; margin-top:5%;height:200px;border-radius:15%;">
+            <div class="content"  >
+                <p>Facebook</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'images/placed2.jpg'%}" style="width:100%; margin-top:5%;height:200px;border-radius:15%;">
+            <div class="content"  >
+                <p>Amazon</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'images/placed3.jpg'%}" style="width:100%; margin-top:5%;height:200px;border-radius:15%;">
+            <div class="content"  >
+                <p>Microsoft</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'images/placed4.jpg'%}" style="width:100%; margin-top:5%;height:200px;border-radius:15%;">
+            <div class="content"  >
+                <p>Google</p>
+            </div>
+        </div>
+        </div>
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <img src="{% static 'images/placed5.jpg'%}" style="width:100%; margin-top:5%;height:200px;border-radius:15%;">
+            <div class="content"  >
+                <p>Infosys</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'images/placed6.jpg'%}" style="width:100%; margin-top:5%;height:200px;border-radius:15%;">
+            <div class="content"  >
+                <p>LinkdIn</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'images/placed7.jpg'%}" style="width:100%; margin-top:5%;height:200px;border-radius:15%;">
+            <div class="content"  >
+                <p>Capgmini</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'images/placed8.jpg'%}" style="width:100%; margin-top:5%;height:200px;border-radius:15%;">
+            <div class="content"  >
+                <p>Cognizent</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.html'%}
+{% endblock %}
